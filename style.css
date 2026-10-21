@@ -27,6 +27,12 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   background:
     radial-gradient(circle at 73% 14%, rgba(255,255,255,.85) 0 2%, transparent 10%),
     linear-gradient(180deg, #58bde9 0%, #91ddf5 43%, #d7f2f5 66%, #57b9e1 67%, #167cc1 100%);
+  background-image:
+    linear-gradient(rgba(41,157,215,.36), rgba(25,128,185,.28)),
+    url('images/frutiger-aero-fundo.webp');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .cloud {
@@ -193,7 +199,11 @@ h1 em { display: inline-block; color: #268bc6; font-style: normal; line-height: 
 .profile-card { align-self: start; border: 1px solid #8cbbd0; border-radius: 9px; overflow: hidden; background: #fff; box-shadow: 0 12px 30px rgba(30,100,139,.16), 0 0 0 4px rgba(255,255,255,.65); transform: rotate(1.2deg); }
 .profile-card { transition: transform .3s ease, box-shadow .3s ease; }
 .profile-card:hover { transform: rotate(0) translateY(-3px); box-shadow: 0 16px 35px rgba(30,100,139,.21), 0 0 0 4px rgba(255,255,255,.75); }
-.profile-image { height: 225px; position: relative; overflow: hidden; background: linear-gradient(#69c9ee 0%, #c6f0f6 68%); }
+.profile-image {
+  height: 225px; position: relative; overflow: hidden;
+  background-image: linear-gradient(rgba(71,194,232,.18), rgba(25,139,172,.2)), url('images/fundo-2.jpg');
+  background-size: cover; background-position: center;
+}
 .sun-glow { position: absolute; top: 23px; right: 29px; width: 48px; height: 48px; border-radius: 50%; background: #fffbc2; box-shadow: 0 0 28px 15px rgba(255,248,159,.5); }
 .portrait-placeholder {
   position: absolute; z-index: 3; left: 50%; top: 34px; width: 132px; height: 185px; transform: translateX(-50%);
