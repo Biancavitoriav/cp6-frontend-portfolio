@@ -77,6 +77,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 .browser-window {
   position: relative;
   z-index: 2;
+  width: min(100%, 1240px);
   max-width: 1240px;
   min-height: min(790px, calc(100vh - 125px));
   margin: 0 auto;
@@ -136,16 +137,16 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 
 .tab-bar { height: 36px; display: flex; align-items: end; padding: 0 15px; gap: 3px; border-top: 1px solid rgba(82,150,187,.3); }
 .tab-bar button {
-  min-width: 112px; height: 29px; padding: 0 15px; border: 1px solid #76a7c3; border-bottom: 0; border-radius: 7px 7px 0 0;
+  min-width: 112px; height: 29px; padding: 0 15px; display: inline-flex; flex: 0 0 auto; align-items: center; justify-content: center; gap: 7px; border: 1px solid #76a7c3; border-bottom: 0; border-radius: 7px 7px 0 0;
   background: linear-gradient(#d9f2fc, #abd8ec); color: #315f80; font-size: 12px; font-weight: 600;
   box-shadow: 0 1px rgba(255,255,255,.9) inset;
   cursor: pointer; transition: height .15s ease, filter .15s ease, transform .08s ease;
 }
 .tab-bar button:hover:not(.active) { height: 31px; filter: brightness(1.07) saturate(1.08); }
 .tab-bar button:active { transform: translateY(1px); filter: brightness(.95); }
-.tab-bar button span { margin-right: 7px; color: #279043; }
-.tab-bar button iconify-icon { width: 18px; height: 18px; margin-right: 7px; vertical-align: -5px; }
-.tab-bar button img { width: 18px; height: 18px; margin-right: 7px; vertical-align: -5px; object-fit: contain; }
+.tab-bar button span { color: #279043; }
+.tab-bar button iconify-icon { width: 18px; height: 18px; flex: 0 0 18px; }
+.tab-bar button img { width: 18px; height: 18px; flex: 0 0 18px; object-fit: contain; }
 .tab-bar button.active { height: 33px; color: #093b6f; background: linear-gradient(#fff, #f5fbff); position: relative; top: 1px; }
 
 .page-shell { min-height: 610px; background: linear-gradient(145deg, #fbfdff 0%, #edf9ff 58%, #e1f4ff 100%); }
@@ -164,7 +165,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 .status-pill span { width: 7px; height: 7px; border-radius: 50%; background: #61bd2a; box-shadow: 0 0 0 3px #dff2d4; }
 h1, h2, h3, p { margin-top: 0; }
 h1, h2, h3 { font-family: Outfit, 'Trebuchet MS', sans-serif; }
-h1 { margin-bottom: 18px; color: #082e64; font-size: clamp(40px, 5.2vw, 68px); line-height: .99; letter-spacing: -3px; }
+h1 { margin-bottom: 18px; color: #082e64; font-size: clamp(40px, 5.2vw, 68px); line-height: 1.08; letter-spacing: -3px; }
 h1 em { color: #268bc6; font-style: normal; }
 .lede { max-width: 505px; color: #4e6e86; font-size: 15px; line-height: 1.7; }
 .cta-row { display: flex; align-items: center; gap: 22px; margin-top: 27px; }
@@ -344,13 +345,21 @@ h1 em { color: #268bc6; font-style: normal; }
   .desktop { padding: 15px 10px 62px; }
   .browser-window { min-height: calc(100vh - 85px); }
   .search-box { display: none; }
-  .tab-bar { overflow-x: auto; }
+  .tab-bar { overflow-x: auto; scrollbar-width: none; }
+  .tab-bar::-webkit-scrollbar { display: none; }
   .tab-bar button { min-width: 100px; }
   .home-layout, .page-grid, .contact-layout { grid-template-columns: 1fr; }
   .profile-card { margin-top: 38px; max-width: 390px; transform: none; }
   .project-grid, .projects-full, .skill-grid, .timeline { grid-template-columns: 1fr 1fr; }
   .note-card { margin-top: 0; }
   .modal-body { grid-template-columns: .75fr 1.25fr; }
+}
+
+@media (min-width: 851px) and (max-width: 1120px) {
+  .page-content { padding-inline: 42px; }
+  .home-layout { grid-template-columns: minmax(0, 1fr) minmax(300px, .82fr); column-gap: 40px; }
+  .quick-facts { gap: 22px; }
+  .quick-facts strong { font-size: 18px; }
 }
 
 @media (max-width: 560px) {
@@ -361,7 +370,7 @@ h1 em { color: #268bc6; font-style: normal; }
   .address-bar { white-space: nowrap; overflow: hidden; }
   .page-topline { height: 58px; }
   .page-content { padding: 27px 20px 45px; }
-  h1 { font-size: 43px; }
+  h1 { max-width: 100%; font-size: clamp(38px, 12vw, 52px); letter-spacing: -2px; }
   .project-grid, .projects-full, .skill-grid, .timeline { grid-template-columns: 1fr; }
   .quick-facts { gap: 16px; }
   .quick-facts { flex-wrap: wrap; }
