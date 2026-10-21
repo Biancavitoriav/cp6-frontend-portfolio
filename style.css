@@ -171,8 +171,8 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 .status-pill span { width: 7px; height: 7px; border-radius: 50%; background: #61bd2a; box-shadow: 0 0 0 3px #dff2d4; }
 h1, h2, h3, p { margin-top: 0; }
 h1, h2, h3 { font-family: Outfit, 'Trebuchet MS', sans-serif; }
-h1 { display: flex; flex-direction: column; gap: 8px; margin-bottom: 18px; color: #082e64; font-size: clamp(40px, 5.2vw, 68px); line-height: 1.15; letter-spacing: -3px; }
-.hero-line { display: block; line-height: 1.15; }
+h1 { display: flex; flex-direction: column; gap: 8px; margin-bottom: 18px; color: #082e64; font-size: clamp(38px, 4.8vw, 62px); line-height: 1.15; letter-spacing: normal; }
+.hero-line { display: block; line-height: 1.15; letter-spacing: -1px; white-space: nowrap; }
 .hero-line.accent { color: #268bc6; }
 .lede { max-width: 505px; color: #4e6e86; font-size: 15px; line-height: 1.7; }
 .cta-row { display: flex; align-items: center; gap: 22px; margin-top: 27px; }
