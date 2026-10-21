@@ -282,6 +282,7 @@ h1 em { display: inline-block; color: #268bc6; font-style: normal; line-height: 
 .skill-tags { display: flex; flex-wrap: wrap; gap: 8px; }
 .skill-tags span { display: inline-flex; align-items: center; gap: 6px; padding: 6px 10px; border-radius: 14px; background: #f5fbfd; font-size: 9px; }
 .skill-tags i { font-size: 14px; line-height: 1; }
+.skill-tags .technology-icon { width: 14px; height: 14px; object-fit: contain; }
 .ui-icon { width: 24px; height: 24px; display: inline-grid; flex: 0 0 auto; place-items: center; color: #258eae; }
 .aero-icon { width: 24px; height: 24px; display: inline-block; flex: 0 0 auto; font-size: 24px; line-height: 1; object-fit: contain; }
 .skill-heading .aero-icon, .timeline-item > .aero-icon { color: #32a14a; }
