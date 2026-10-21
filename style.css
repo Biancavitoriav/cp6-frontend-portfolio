@@ -166,7 +166,8 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 h1, h2, h3, p { margin-top: 0; }
 h1, h2, h3 { font-family: Outfit, 'Trebuchet MS', sans-serif; }
 h1 { margin-bottom: 18px; color: #082e64; font-size: clamp(40px, 5.2vw, 68px); line-height: 1.08; letter-spacing: -3px; }
-h1 em { color: #268bc6; font-style: normal; }
+h1 br { display: block; height: .12em; content: ''; }
+h1 em { display: inline-block; color: #268bc6; font-style: normal; line-height: 1.08; }
 .lede { max-width: 505px; color: #4e6e86; font-size: 15px; line-height: 1.7; }
 .cta-row { display: flex; align-items: center; gap: 22px; margin-top: 27px; }
 .aero-button {
