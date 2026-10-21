@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bianca Veloso — Full-Stack Software Engineer portfolio" />
+    <title>Bianca Veloso — Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="desktop">
+      <div class="cloud cloud-one"></div><div class="cloud cloud-two"></div><div class="cloud cloud-three"></div>
+      <div class="bubbles" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <div class="landscape" aria-hidden="true"><div class="distant-hill"></div><div class="grass"></div><div class="water"></div></div>
+
+      <div class="browser-window">
+        <header class="browser-chrome">
+          <div class="title-bar"><div class="site-mark">BV</div><span>Bianca Veloso — Software Engineering Portfolio</span><div class="window-controls"><button aria-label="Minimize">—</button><button aria-label="Maximize">□</button><button class="close" aria-label="Close">×</button></div></div>
+          <div class="browser-tools">
+            <div class="nav-arrows"><button id="previous-section" aria-label="Previous section">‹</button><button id="next-section" aria-label="Next section">›</button></div>
+            <div class="address-bar"><span class="address-icon">✦</span><span class="protocol">https://</span><span id="address-path">biancaveloso.dev/home</span><span class="refresh">↻</span></div>
+            <div class="search-box">Search <span>⌕</span></div>
+          </div>
+          <nav class="tab-bar" aria-label="Portfolio sections">
+            <button class="active" data-section="home" aria-current="page"><iconify-icon icon="fluent-emoji:house" aria-hidden="true"></iconify-icon>Home</button>
+            <button data-section="about"><iconify-icon icon="fluent-emoji:bust-in-silhouette" aria-hidden="true"></iconify-icon>About Me</button>
+            <button data-section="projects"><iconify-icon icon="fluent-emoji:file-folder" aria-hidden="true"></iconify-icon>Projects</button>
+            <button data-section="skills"><iconify-icon icon="fluent-emoji:high-voltage" aria-hidden="true"></iconify-icon>Skills</button>
+            <button data-section="experience"><iconify-icon icon="fluent-emoji:briefcase" aria-hidden="true"></iconify-icon>Experience</button>
+            <button data-section="contact"><iconify-icon icon="fluent-emoji:envelope" aria-hidden="true"></iconify-icon>Contact</button>
+          </nav>
+        </header>
+
+        <div class="page-shell">
+          <div class="page-topline"><a class="brand" href="#home" data-section-link="home"><span>bianca</span>veloso<sup>✦</sup></a><div class="page-meta"><span class="online-dot"></span> Online &amp; creating</div></div>
+          <div class="page-content">
+            <section class="page-view" data-view="home">
+              <div class="home-layout">
+                <section class="intro">
+                  <p class="status-pill"><span></span> Full-Stack Software Engineer at PicPay</p>
+                  <h1>Hello, I’m<br /><em>Bianca Veloso.</em></h1>
+                  <p class="lede">I build robust, scalable systems across front-end, back-end, and data engineering.</p>
+                  <div class="cta-row"><button class="aero-button" data-section-link="projects">Explore my work <span>→</span></button><button class="text-button" data-section-link="about">More about me</button></div>
+                  <div class="quick-facts"><div><iconify-icon class="aero-icon" icon="fluent-emoji:round-pushpin" aria-hidden="true"></iconify-icon><strong>São Paulo</strong><span>Brazil</span></div><div><iconify-icon class="aero-icon" icon="fluent-emoji:briefcase" aria-hidden="true"></iconify-icon><strong>PicPay</strong><span>Current company</span></div><div><iconify-icon class="aero-icon" icon="fluent-emoji:graduation-cap" aria-hidden="true"></iconify-icon><strong>FIAP</strong><span>Education</span></div></div>
+                </section>
+                <aside class="profile-card"><div class="profile-image"><div class="sun-glow"></div><div class="portrait-placeholder"><span>YOUR<br />PHOTO</span></div><div class="hill hill-back"></div><div class="hill hill-front"></div></div><div class="profile-strip"><span class="online-dot"></span><div><strong>São Paulo, Brazil</strong><p>Full-Stack Software Engineer</p></div><span class="globe">◎</span></div></aside>
+                <section class="featured"><div class="section-heading"><div><p class="eyebrow">SELECTED WORK</p><h2>Featured engineering work</h2></div><button class="view-all" data-section-link="projects">View all projects <span>→</span></button></div><div class="project-grid"><div data-project="hours"></div><div data-project="germinares"></div></div></section>
+              </div>
+            </section>
+
+            <section class="page-view is-hidden" data-view="about"><div class="page-grid"><section class="content-card wide"><p class="eyebrow">A LITTLE ABOUT ME</p><h2>Engineering reliable systems,<br />from interface to data.</h2><p class="body-copy">Full-Stack Software Engineer focused on building robust and scalable systems. I work across Legal Tech, Compliance, Human Resources, front-end development, back-end systems, and Data Engineering. I enjoy learning new technologies and turning complex problems into useful digital experiences.</p></section><aside class="content-card note-card"><span class="note-pin"></span><p>“Build it robust.<br />Keep it useful.<br />Make it scale.”</p><small>— ENGINEERING PRINCIPLES</small></aside></div></section>
+
+            <section class="page-view is-hidden" data-view="projects"><div class="section-page"><div class="page-title"><p class="eyebrow">SELECTED ENGINEERING WORK</p><h2>Projects with real-world impact</h2></div><div class="projects-full"><div data-project="hours"></div><div data-project="germinares"></div><div data-project="trocatine"></div></div></div></section>
+
+            <section class="page-view is-hidden" data-view="skills"><div class="section-page"><div class="page-title"><p class="eyebrow">TECHNOLOGY STACK</p><h2>Tools for building end to end.</h2></div><div class="skill-grid"><div class="skill-card"><div class="skill-heading"><iconify-icon class="aero-icon" icon="fluent-emoji:desktop-computer" aria-hidden="true"></iconify-icon><h3>Front-End</h3></div><div class="skill-tags"><span>Angular</span><span>TypeScript</span><span>Next.js</span><span>React</span><span>HTML</span><span>CSS</span></div></div><div class="skill-card"><div class="skill-heading"><iconify-icon class="aero-icon" icon="fluent-emoji:desktop-computer" aria-hidden="true"></iconify-icon><h3>Back-End</h3></div><div class="skill-tags"><span>Java</span><span>Spring Boot</span><span>Node.js</span><span>Python</span></div></div><div class="skill-card"><div class="skill-heading"><iconify-icon class="aero-icon" icon="fluent-emoji:chart-increasing" aria-hidden="true"></iconify-icon><h3>Data Engineering &amp; Analytics</h3></div><div class="skill-tags"><span>Apache Spark</span><span>Apache Airflow</span><span>Databricks</span></div></div><div class="skill-card"><div class="skill-heading"><iconify-icon class="aero-icon" icon="fluent-emoji:globe-with-meridians" aria-hidden="true"></iconify-icon><h3>Databases &amp; Infrastructure</h3></div><div class="skill-tags"><span>PostgreSQL</span><span>MongoDB</span><span>Docker</span><span>AWS</span></div></div></div></div></section>
+
+            <section class="page-view is-hidden" data-view="experience"><div class="section-page"><div class="page-title"><p class="eyebrow">BACKGROUND</p><h2>Work, education &amp; location</h2></div><div class="timeline experience-grid"><div class="timeline-item"><span class="timeline-dot"></span><iconify-icon class="aero-icon" icon="fluent-emoji:briefcase" aria-hidden="true"></iconify-icon><p>WORK EXPERIENCE</p><h3>Full-Stack Software Engineer</h3><small>PicPay · Current</small></div><div class="timeline-item"><span class="timeline-dot"></span><iconify-icon class="aero-icon" icon="fluent-emoji:graduation-cap" aria-hidden="true"></iconify-icon><p>EDUCATION</p><h3>Technology Education</h3><small>FIAP</small></div><div class="timeline-item"><span class="timeline-dot"></span><iconify-icon class="aero-icon" icon="fluent-emoji:graduation-cap" aria-hidden="true"></iconify-icon><p>EDUCATION</p><h3>Professional Education</h3><small>Instituto J&amp;F</small></div><div class="timeline-item"><span class="timeline-dot"></span><iconify-icon class="aero-icon" icon="fluent-emoji:round-pushpin" aria-hidden="true"></iconify-icon><p>LOCATION</p><h3>São Paulo, Brazil</h3><small>Building for teams and users at scale</small></div></div></div></section>
+
+            <section class="page-view is-hidden" data-view="contact"><div id="contact-form-view" class="contact-layout"><section><p class="eyebrow">LET’S MAKE SOMETHING GOOD</p><h2>Have a project<br />in mind?</h2><p class="body-copy">I’d love to hear what you’re working on. Send a note and I’ll get back to you soon.</p><a class="email-link" href="mailto:hello@example.com">hello@example.com <span>↗</span></a></section><form class="contact-form" id="contact-form"><label>Name<input name="name" placeholder="Your name" required /></label><label>Email<input name="email" type="email" placeholder="you@example.com" required /></label><label>Message<textarea name="message" placeholder="Tell me a little about your project..." rows="4" required></textarea></label><button class="aero-button" type="submit">Send message <span>→</span></button></form></div></section>
+          </div>
+        </div>
+        <footer class="browser-status"><span><i></i> Done</span><span>Internet&nbsp;&nbsp;│&nbsp;&nbsp;100%</span></footer>
+      </div>
+      <div class="taskbar"><button class="start-button" data-section-link="home"><iconify-icon class="orb" icon="fluent-emoji:window" aria-hidden="true"></iconify-icon><strong>start</strong></button><div class="task-item"><iconify-icon class="mini-browser" icon="fluent-emoji:globe-with-meridians" aria-hidden="true"></iconify-icon> Bianca Veloso — Portfolio</div><div class="task-spacer"></div><div class="tray"><iconify-icon icon="fluent-emoji:cloud" aria-hidden="true"></iconify-icon><iconify-icon icon="fluent-emoji:antenna-bars" aria-hidden="true"></iconify-icon><iconify-icon icon="fluent-emoji:computer-mouse" aria-hidden="true"></iconify-icon><strong>10:24 AM</strong></div></div>
+
+      <div class="modal-backdrop" id="project-modal" hidden><section class="project-modal" role="dialog" aria-modal="true" aria-labelledby="project-modal-title"><div class="modal-titlebar"><span class="site-mark">BV</span><span>Project Details — <span id="modal-titlebar-name"></span></span><button id="modal-close" aria-label="Close project details">×</button></div><div class="modal-body"><div class="modal-art" id="modal-art"><span id="modal-number"></span><div class="project-window modal-window"><i></i><i></i><i></i></div><div class="art-bubbles"><i></i><i></i><i></i></div></div><div class="modal-copy"><p class="eyebrow" id="modal-role"></p><h2 id="project-modal-title"></h2><p id="modal-description"></p><div class="modal-divider"></div><h3>Technology &amp; focus</h3><div class="tech-list" id="modal-technologies"></div><a class="aero-button modal-link" href="#" id="modal-link">Repository / case study <span>↗</span></a></div></div><div class="modal-status"><span><i></i> Project loaded</span><button id="modal-close-bottom">Close</button></div></section></div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
