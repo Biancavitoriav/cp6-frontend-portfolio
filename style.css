@@ -204,6 +204,7 @@ h1 em { display: inline-block; color: #268bc6; font-style: normal; line-height: 
   background-image: linear-gradient(rgba(71,194,232,.18), rgba(25,139,172,.2)), url('images/fundo-2.jpg');
   background-size: cover; background-position: center;
 }
+.project-window, .art-bubbles { display: none; }
 .sun-glow { position: absolute; top: 23px; right: 29px; width: 48px; height: 48px; border-radius: 50%; background: #fffbc2; box-shadow: 0 0 28px 15px rgba(255,248,159,.5); }
 .portrait-placeholder {
   position: absolute; z-index: 3; left: 50%; top: 34px; width: 132px; height: 185px; transform: translateX(-50%);
