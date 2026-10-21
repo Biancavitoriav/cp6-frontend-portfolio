@@ -1,18 +1,28 @@
 const projects = {
-  hours: {
-    title: 'Hours Control', number: '01', color: 'water-card', role: 'Front-End Developer',
-    description: 'A platform that tracks how team time is distributed across projects, helping identify bottlenecks and support better decisions around hiring, automation, and process optimization.',
-    technologies: ['Angular', 'TypeScript', 'Data Analytics']
+  salaf: {
+    title: 'salaf-mesas', number: '01', color: 'water-card', role: 'Python / Flask Application',
+    description: 'A web application that automates daily random seating rotation for 24 students across five tables in a real classroom at Instituto J&F.',
+    technologies: ['Python', 'Flask'], repository: 'https://github.com/Biancavitoriav/salaf-mesas'
   },
-  germinares: {
-    title: 'Germinares Management', number: '02', color: 'bloom-card', role: 'Full-Stack Development',
-    description: 'A platform for student performance evaluation with self-evaluations, manager feedback, and report generation, reducing manual HR work while improving organization and scalability.',
-    technologies: ['React', 'Java', 'PostgreSQL']
+  estoque: {
+    title: 'Api-estoque', number: '02', color: 'bloom-card', role: 'REST API',
+    description: 'A product inventory management API built with Spring Boot 3 and PostgreSQL, with CRUD operations, input validation, partial updates, and Docker deployment.',
+    technologies: ['Java', 'Spring Boot', 'PostgreSQL', 'Docker'], repository: 'https://github.com/Biancavitoriav/Api-estoque'
   },
   trocatine: {
-    title: 'TrocaTine', number: '03', color: 'city-card', role: 'Mobile Developer',
-    description: 'A mobile marketplace for exchanging and selling children’s clothes, shoes, accessories, and toys, encouraging sustainability and more conscious consumption.',
-    technologies: ['Mobile', 'TypeScript', 'Node.js']
+    title: 'Aplicativo-Trocatine', number: '03', color: 'city-card', role: 'Mobile Application',
+    description: 'An interdisciplinary mobile marketplace for exchanging and selling children’s clothes, shoes, accessories, and toys, aligned with UN SDG 11.',
+    technologies: ['Java', 'Mobile', 'Sustainability'], repository: 'https://github.com/Biancavitoriav/Aplicativo-Trocatine'
+  },
+  laufey: {
+    title: 'chat-rag-laufey', number: '04', color: 'water-card', role: 'AI / RAG Chatbot',
+    description: 'A Flask web chatbot that verifies user statements against a curated knowledge base using Retrieval-Augmented Generation and the Google Gemini API.',
+    technologies: ['Python', 'Flask', 'CSS', 'Gemini API'], repository: 'https://github.com/Biancavitoriav/chat-rag-laufey'
+  },
+  tikmovies: {
+    title: 'TikMovies', number: '05', color: 'bloom-card', role: 'React Application',
+    description: 'An academic React application that helps users organize movies they have watched, want to watch, or have marked as favorites.',
+    technologies: ['React', 'TypeScript'], repository: 'https://github.com/Biancavitoriav/TikMovies'
   }
 }
 
@@ -91,6 +101,10 @@ function openProject(key) {
   document.getElementById('modal-description').textContent = project.description
   document.getElementById('modal-art').className = `modal-art ${project.color}`
   document.getElementById('modal-technologies').innerHTML = project.technologies.map((technology) => `<span>${technology}</span>`).join('')
+  const repositoryLink = document.getElementById('modal-link')
+  repositoryLink.href = project.repository
+  repositoryLink.target = '_blank'
+  repositoryLink.rel = 'noreferrer'
   document.getElementById('project-modal').hidden = false
 }
 
