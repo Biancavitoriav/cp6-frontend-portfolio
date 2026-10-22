@@ -4,6 +4,8 @@ Portfólio pessoal desenvolvido para o Checkpoint 6, com uma experiência inspir
 
 A proposta é apresentar perfil, projetos, habilidades e experiências como se o visitante estivesse navegando em um antigo navegador de Internet: com abas, janelas, arquivos, pastas, taskbar, status bars e um visualizador de projetos.
 
+**Acesse o portfólio:** [cp6-frontend-bianca-portfolio.vercel.app](https://cp6-frontend-bianca-portfolio.vercel.app/#home)
+
 ## Prévia
 
 <img width="1432" height="812" alt="image" src="https://github.com/user-attachments/assets/1545d581-ed99-48fe-898a-d15619ce3492" />
@@ -121,12 +123,6 @@ Leia a [documentação final do Checkpoint 6](DOCUMENTACAO_FINAL.md) para consul
 - registro de problemas e correções;
 - validação do projeto;
 - reflexão final e próximos passos.
-
-## Pendências antes da publicação
-
-- Substituir `hello@example.com` pelo e-mail real no formulário e nos links de contato.
-- Inserir o link público do deploy na documentação final.
-- Avaliar uma próxima versão mais interativa, com janelas movimentáveis, minimizar, maximizar, taskbar com aplicativos ativos e modais mais fiéis ao Windows XP.
 
 ## Referências visuais
 

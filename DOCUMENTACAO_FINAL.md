@@ -176,7 +176,7 @@ A validação foi feita no preview local em 22/10/2026, com inspeção visual e 
 
 - **Repositório:** [github.com/Biancavitoriav/cp6-frontend-portfolio](https://github.com/Biancavitoriav/cp6-frontend-portfolio)
 - **Preview local usado na validação:** `http://127.0.0.1:5500/index.html#home`
-- **Deploy público:** não foi localizado nos arquivos nem nas conversas revisadas. Inserir o link do deploy antes do envio final à professora.
+- **Deploy público:** [cp6-frontend-bianca-portfolio.vercel.app](https://cp6-frontend-bianca-portfolio.vercel.app/#home)
 - **Contato do formulário:** o projeto ainda usa `hello@example.com` como destinatário. Substituir pelo e-mail real antes de publicar ou entregar.
 
 ## 8. Reflexão final
@@ -191,6 +191,15 @@ O principal aprendizado foi escrever prompts com restrições mais específicas,
 2. composição — hierarquia, agrupamento, proporção e espaço;
 3. comportamento — navegação, feedback, estados, abertura de detalhes e resposta a erros.
 
-Ainda mudaria duas coisas antes da publicação: substituir o destinatário de e-mail de exemplo e registrar o link real do deploy. Fora esses pontos de entrega, a versão atual apresenta o processo de decisão, as correções e o resultado funcional esperado para o checkpoint.
+Ainda mudaria uma coisa antes da publicação: substituir o destinatário de e-mail de exemplo. Fora esse ponto, a versão atual apresenta o processo de decisão, as correções e o resultado funcional esperado para o checkpoint.
 
 Como possibilidade de continuidade, talvez eu prossiga com o projeto para torná-lo mais interativo e ainda mais fiel a um Windows XP real. Essa próxima etapa poderia explorar janelas movimentáveis, minimizar e maximizar componentes, taskbar com aplicativos ativos, modais mais completos e relações mais próximas entre desktop, arquivos e programas. Nesta entrega, a experiência ainda é principalmente uma interpretação visual que partiu da minha própria ideia de portfólio retrô; a evolução futura pode transformar essa referência conceitual em uma simulação mais consistente do sistema operacional.
+
+## 9. Checklist da entrega
+
+- [x] Referências visuais analisadas.
+- [x] Paleta, tipografia, tom e estrutura documentados.
+- [x] Principais prompts resumidos.
+- [x] Correções e aprendizados registrados.
+- [x] Resultado final, repositório e deploy informados.
+- [ ] Substituir `hello@example.com` pelo e-mail real.
