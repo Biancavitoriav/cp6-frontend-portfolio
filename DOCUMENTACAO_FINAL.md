@@ -194,15 +194,3 @@ O principal aprendizado foi escrever prompts com restrições mais específicas,
 Ainda mudaria duas coisas antes da publicação: substituir o destinatário de e-mail de exemplo e registrar o link real do deploy. Fora esses pontos de entrega, a versão atual apresenta o processo de decisão, as correções e o resultado funcional esperado para o checkpoint.
 
 Como possibilidade de continuidade, talvez eu prossiga com o projeto para torná-lo mais interativo e ainda mais fiel a um Windows XP real. Essa próxima etapa poderia explorar janelas movimentáveis, minimizar e maximizar componentes, taskbar com aplicativos ativos, modais mais completos e relações mais próximas entre desktop, arquivos e programas. Nesta entrega, a experiência ainda é principalmente uma interpretação visual que partiu da minha própria ideia de portfólio retrô; a evolução futura pode transformar essa referência conceitual em uma simulação mais consistente do sistema operacional.
-
-## 9. Checklist da professora
-
-- [x] Pelo menos cinco referências visuais analisadas.
-- [x] Paleta com códigos hexadecimais e função de cada cor.
-- [x] Tipografia, tom, personalidade e estrutura da página explicados.
-- [x] Principais prompts registrados de forma resumida.
-- [x] Problemas, correções, resultados e aprendizados documentados.
-- [x] Resultado final, repositório e validação descritos.
-- [ ] Inserir o link público do deploy.
-- [ ] Substituir `hello@example.com` pelo e-mail real.
-

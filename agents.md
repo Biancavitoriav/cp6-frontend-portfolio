@@ -72,10 +72,3 @@ Também testar manualmente:
 4. formulário de contato sem envio acidental;
 5. visualização das imagens e ícones;
 6. comportamento em telas menores.
-
-## Pendências conhecidas
-
-- Substituir `hello@example.com` pelo e-mail real antes da publicação.
-- Inserir o link público do deploy na documentação final.
-- Uma possível próxima etapa é transformar a estética em uma simulação mais interativa de Windows XP, com janelas movimentáveis, minimizar, maximizar, taskbar com aplicativos ativos e modais mais completos.
-
