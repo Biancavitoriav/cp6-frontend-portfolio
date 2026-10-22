@@ -1,69 +1,548 @@
 <!doctype html>
-<html lang="en">
-  <head>
+<html lang="pt-BR">
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Bianca Veloso — Full-Stack Software Engineer portfolio" />
-    <title>Bianca Veloso — Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description"
+        content="Portfolio of Bianca Veloso, a full-stack software engineer building clear interfaces, reliable APIs and useful data systems." />
+    <meta name="theme-color" content="#0b67ad" />
+    <link rel="icon" type="image/png" href="images/site-icon.png" />
+    <link rel="apple-touch-icon" href="images/site-icon.png" />
+    <title>Bianca Veloso — Full-Stack Software Engineer</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <main class="desktop">
-      <div class="browser-window">
-        <header class="browser-chrome">
-          <div class="title-bar"><div class="site-mark">BV</div><span>Bianca Veloso — Software Engineering Portfolio</span><div class="window-controls"><button aria-label="Minimize">—</button><button aria-label="Maximize">□</button><button class="close" aria-label="Close">×</button></div></div>
-          <div class="browser-tools">
-            <div class="nav-arrows"><button id="previous-section" aria-label="Previous section">‹</button><button id="next-section" aria-label="Next section">›</button></div>
-            <div class="address-bar"><span class="address-icon">✦</span><span class="protocol">https://</span><span id="address-path">biancaveloso.dev/home</span><span class="refresh">↻</span></div>
-            <div class="search-box">Search <span>⌕</span></div>
-          </div>
-          <nav class="tab-bar" aria-label="Portfolio sections">
-            <button class="active" data-section="home" aria-current="page"><iconify-icon icon="fluent-emoji:house" aria-hidden="true"></iconify-icon>Home</button>
-            <button data-section="about"><iconify-icon icon="fluent-emoji:bust-in-silhouette" aria-hidden="true"></iconify-icon>About Me</button>
-            <button data-section="projects"><iconify-icon icon="fluent-emoji:file-folder" aria-hidden="true"></iconify-icon>Projects</button>
-            <button data-section="skills"><iconify-icon icon="fluent-emoji:high-voltage" aria-hidden="true"></iconify-icon>Skills</button>
-            <button data-section="experience"><iconify-icon icon="fluent-emoji:briefcase" aria-hidden="true"></iconify-icon>Experience</button>
-            <button data-section="contact"><iconify-icon icon="fluent-emoji:envelope" aria-hidden="true"></iconify-icon>Contact</button>
-          </nav>
-        </header>
+        <aside class="clippy-helper" aria-hidden="true">
+            <div class="clippy-bubble">Need a hand?</div><img src="images/clippy-helper.png" alt="" />
+        </aside>
+        <div class="browser-window">
+            <header class="browser-chrome">
+                <div class="title-bar"><span>Bianca Veloso — Full-Stack Software Engineer</span>
+                    <div class="window-controls" aria-hidden="true"><span>—</span><span>□</span><span
+                            class="close">×</span></div>
+                </div>
+                <div class="browser-tools">
+                    <div class="nav-arrows"><button id="previous-section"
+                            aria-label="Previous section">‹</button><button id="next-section"
+                            aria-label="Next section">›</button></div>
+                    <div class="address-bar"><iconify-icon class="address-icon" icon="windows:network"
+                            aria-hidden="true"></iconify-icon><span class="protocol">https://</span><span
+                            id="address-path">biancaveloso.dev/home</span><span class="refresh"
+                            aria-hidden="true">↻</span></div>
+                    <form class="search-box" id="project-search-form" role="search">
+                        <label class="sr-only" for="project-search">Search projects and technologies</label>
+                        <input id="project-search" type="search" placeholder="Search work or tools"
+                            autocomplete="off" />
+                        <button type="submit" aria-label="Search work or tools"><iconify-icon icon="windows:search"
+                                aria-hidden="true"></iconify-icon></button>
+                    </form>
+                </div>
+                <nav class="tab-bar" aria-label="Portfolio sections">
+                    <button class="active" data-section="home" aria-current="page"><iconify-icon icon="windows:home"
+                            aria-hidden="true"></iconify-icon>Home</button>
+                    <button data-section="about"><iconify-icon icon="windows:profile"
+                            aria-hidden="true"></iconify-icon>About</button>
+                    <button data-section="projects"><iconify-icon icon="windows:folder"
+                            aria-hidden="true"></iconify-icon>Work</button>
+                    <button data-section="skills"><iconify-icon icon="windows:tools"
+                            aria-hidden="true"></iconify-icon>Toolkit</button>
+                    <button data-section="experience"><iconify-icon icon="windows:briefcase"
+                            aria-hidden="true"></iconify-icon>Experience</button>
+                    <button data-section="contact"><iconify-icon icon="windows:mail"
+                            aria-hidden="true"></iconify-icon>Contact</button>
+                </nav>
+            </header>
 
-        <div class="page-shell">
-          <div class="page-topline"><a class="brand" href="#home" data-section-link="home"><span>bianca</span>veloso<sup>✦</sup></a><div class="page-meta"><span class="online-dot"></span> Online &amp; creating</div></div>
-          <div class="page-content">
-            <section class="page-view" data-view="home">
-              <div class="home-layout">
-                <section class="intro">
-                  <p class="status-pill"><span></span> Full-Stack Software Engineer at PicPay</p>
-                  <h1><span class="hero-line">Hello, I’m</span><span class="hero-line accent">Bianca Veloso.</span></h1>
-                  <p class="lede">I build robust, scalable systems across front-end, back-end, and data engineering.</p>
-                  <div class="cta-row"><button class="aero-button" data-section-link="projects">Explore my work <span>→</span></button><button class="text-button" data-section-link="about">More about me</button></div>
-                  <div class="quick-facts"><div><iconify-icon class="aero-icon" icon="fluent-emoji:round-pushpin" aria-hidden="true"></iconify-icon><strong>São Paulo</strong><span>Brazil</span></div><div><iconify-icon class="aero-icon" icon="fluent-emoji:briefcase" aria-hidden="true"></iconify-icon><strong>PicPay</strong><span>Current company</span></div><div><iconify-icon class="aero-icon" icon="fluent-emoji:graduation-cap" aria-hidden="true"></iconify-icon><strong>FIAP</strong><span>Education</span></div></div>
-                  <img class="glitter-banner" src="https://www.gigaglitters.com/g/0a77t3i6np6.gif" alt="vamos criar juntxs?" loading="lazy" />
-                </section>
-                <aside class="profile-card"><div class="profile-image"></div><div class="profile-strip"><span class="online-dot"></span><div><strong>São Paulo, Brazil</strong><p>Full-Stack Software Engineer</p></div><span class="globe">◎</span></div></aside>
-                <section class="featured"><div class="section-heading"><div><p class="eyebrow">SELECTED WORK</p><h2>Featured engineering work</h2></div><button class="view-all" data-section-link="projects">View all projects <span>→</span></button></div><div class="project-grid"><div data-project="salaf"></div><div data-project="estoque"></div></div></section>
-              </div>
-            </section>
+            <div class="page-shell">
+                <div class="page-topline">
+                    <div class="page-counters"><span>Portfolio / 2026</span><span>Based in São Paulo</span></div>
+                </div>
+                <div class="page-content" tabindex="-1">
+                    <section class="page-view" data-view="home">
+                        <div class="home-layout">
+                            <aside class="profile-card profile-sidebar">
+                                <div class="legacy-window-title home-profile-title"><iconify-icon
+                                        class="profile-title-icon" icon="windows:briefcase"
+                                        aria-hidden="true"></iconify-icon><strong>bianca-profile.exe</strong><span
+                                        class="legacy-controls">— □ ×</span></div>
+                                <div class="profile-image" role="img"
+                                    aria-label="Bianca Veloso smiling in front of an urban São Paulo landscape"></div>
+                                <div class="profile-sidebar-copy">
+                                    <h2>Bianca Veloso</h2>
+                                    <p>Full-Stack Software Engineer</p>
+                                    <p>São Paulo, Brazil · remote-friendly</p>
+                                </div>
+                                <div class="side-socials">
+                                    <h3>connect with me</h3><a href="https://github.com/Biancavitoriav" target="_blank"
+                                        rel="noreferrer"><i class="devicon-github-original social-brand-icon"
+                                            aria-hidden="true"></i>
+                                        GitHub</a><a
+                                        href="https://www.linkedin.com/in/bianca-vitoria-veloso/?isSelfProfile=true"
+                                        target="_blank" rel="noreferrer"><i
+                                            class="devicon-linkedin-plain colored social-brand-icon"
+                                            aria-hidden="true"></i> LinkedIn</a><a
+                                        href="mailto:hello@example.com"><iconify-icon class="windows-nav-icon"
+                                            icon="windows:mail" aria-hidden="true"></iconify-icon> Send an email</a>
+                                </div>
+                            </aside>
 
-            <section class="page-view is-hidden" data-view="about"><div class="page-grid"><section class="content-card wide"><p class="eyebrow">A LITTLE ABOUT ME</p><h2>Engineering reliable systems,<br />from interface to data.</h2><p class="body-copy">Full-Stack Software Engineer focused on building robust and scalable systems. I work across Legal Tech, Compliance, Human Resources, front-end development, back-end systems, and Data Engineering. I enjoy learning new technologies and turning complex problems into useful digital experiences.</p></section><aside class="content-card note-card"><span class="note-pin"></span><p>“Build it robust.<br />Keep it useful.<br />Make it scale.”</p><small>— ENGINEERING PRINCIPLES</small></aside></div></section>
+                            <section class="intro profile-main">
+                                <section class="profile-properties" aria-label="Profile properties">
+                                    <div class="profile-properties-titlebar">
+                                        <div class="profile-properties-title"><img class="profile-title-icon"
+                                                src="images/profile-user.png" alt="" aria-hidden="true" />
+                                            <div>
+                                                <h2>bianca-properties.txt - Notepad</h2>
+                                            </div>
+                                        </div>
+                                        <span class="profile-properties-controls" aria-hidden="true">— □ ×</span>
+                                        <span class="properties-state"><i class="online-dot"></i> open to work</span>
+                                    </div>
+                                    <div class="profile-properties-body">
+                                        <div class="profile-properties-intro">
+                                            <div class="properties-intro-icon"><iconify-icon icon="windows:briefcase"
+                                                    aria-hidden="true"></iconify-icon></div>
+                                            <div class="properties-intro-copy">
+                                                <p class="eyebrow">CURRENT WORKSPACE</p>
+                                                <strong>PicPay</strong><span>Full-Stack Software
+                                                    Engineer</span>
+                                            </div>
+                                        </div>
+                                        <div class="profile-properties-grid">
+                                            <div class="property-item">
+                                                <span>specialty</span><strong>full-stack</strong><small>product +
+                                                    engineering</small></div>
+                                            <div class="property-item"><span>studying
+                                                    at</span><strong>FIAP</strong><small>Software
+                                                    Engineering</small></div>
+                                            <div class="property-item"><span>based in</span><strong>São
+                                                    Paulo</strong><small>Brazil ·
+                                                    remote-friendly</small></div>
+                                            <div class="property-item property-wide">
+                                                <span>strength</span><strong>turning product needs into
+                                                    reliable software</strong></div>
+                                        </div>
+                                    </div>
+                                    <div class="profile-properties-status"><span>4 properties</span></div>
+                                </section>
+                                <section class="about-preview legacy-window">
+                                    <div class="legacy-window-title"><iconify-icon icon="windows:document"
+                                            aria-hidden="true"></iconify-icon><strong>what-i-build.txt -
+                                            Notepad</strong><span class="legacy-controls">— □ ×</span></div>
+                                    <div class="about-preview-body">
+                                        <p class="eyebrow">A LITTLE ABOUT THE WORK</p>
+                                        <h2>What I build</h2>
+                                        <p>I create useful digital experiences and reliable systems that hold up in the
+                                            real world. My work
+                                            spans clear interfaces, well-structured APIs and data workflows that teams
+                                            can trust.</p>
+                                        <p>I move comfortably between product thinking and engineering details, with a
+                                            soft spot for playful
+                                            visual identities.</p>
+                                    </div>
+                                    <div class="legacy-window-status"><span>Ln 01, Col 01</span><span>Text
+                                            Document</span><span>Ready</span></div>
+                                </section>
+                                <div class="cta-row"><button class="ds-button ds-button-primary"
+                                        data-section-link="projects">See my
+                                        work <span>→</span></button><button class="ds-button ds-button-secondary"
+                                        data-section-link="contact">Start a conversation</button></div>
+                            </section>
 
-            <section class="page-view is-hidden" data-view="projects"><div class="section-page"><div class="page-title"><p class="eyebrow">SELECTED ENGINEERING WORK</p><h2>Projects with real-world impact</h2></div><div class="projects-full"><div data-project="salaf"></div><div data-project="estoque"></div><div data-project="trocatine"></div><div data-project="laufey"></div><div data-project="tikmovies"></div></div></div></section>
+                            <aside class="home-rail">
+                                <section class="rail-card">
+                                    <h2 class="home-window-title"><iconify-icon icon="windows:desktop"
+                                            aria-hidden="true"></iconify-icon><strong>tools I use</strong><span
+                                            class="legacy-controls">— □
+                                            ×</span></h2>
+                                    <div class="rail-skills"><a href="#skills" data-section-link="skills"><i
+                                                class="devicon-angularjs-plain colored"></i><span>Angular</span></a><a
+                                            href="#skills" data-section-link="skills"><i
+                                                class="devicon-typescript-plain colored"></i><span>TypeScript</span></a><a
+                                            href="#skills" data-section-link="skills"><i
+                                                class="devicon-java-plain colored"></i><span>Java</span></a><a
+                                            href="#skills" data-section-link="skills"><i
+                                                class="devicon-python-plain colored"></i><span>Python</span></a><a
+                                            href="#skills" data-section-link="skills"><i
+                                                class="devicon-react-original colored"></i><span>React</span></a><a
+                                            href="#skills" data-section-link="skills"><i
+                                                class="devicon-docker-plain colored"></i><span>Docker</span></a></div>
+                                    <button class="ds-button ds-button-secondary ds-button-compact rail-link"
+                                        data-section-link="skills">Explore
+                                        the full toolkit</button>
+                                </section>
+                                <section class="rail-card what-i-do">
+                                    <h2 class="home-window-title"><iconify-icon icon="windows:pin"
+                                            aria-hidden="true"></iconify-icon><strong>how I help</strong><span
+                                            class="legacy-controls">— □
+                                            ×</span></h2><a href="#projects"
+                                        data-section-link="projects"><b><iconify-icon class="windows-nav-icon"
+                                                icon="windows:web"
+                                                aria-hidden="true"></iconify-icon></b><span><strong>Web
+                                                applications</strong><small>Clear
+                                                interfaces people enjoy using</small></span></a><a href="#projects"
+                                        data-section-link="projects"><b><iconify-icon class="windows-nav-icon"
+                                                icon="windows:api"
+                                                aria-hidden="true"></iconify-icon></b><span><strong>APIs &amp;
+                                                systems</strong><small>Services
+                                                that stay useful as they grow</small></span></a><a href="#skills"
+                                        data-section-link="skills"><b><iconify-icon class="windows-nav-icon"
+                                                icon="windows:data"
+                                                aria-hidden="true"></iconify-icon></b><span><strong>Data
+                                                workflows</strong><small>Pipelines that
+                                                turn information into action</small></span></a>
+                                </section>
+                            </aside>
 
-            <section class="page-view is-hidden" data-view="skills"><div class="section-page"><div class="page-title"><p class="eyebrow">TECHNOLOGY STACK</p><h2>Tools for building end to end.</h2></div><div class="skill-grid"><div class="skill-card"><div class="skill-heading"><iconify-icon class="aero-icon" icon="fluent-emoji:desktop-computer" aria-hidden="true"></iconify-icon><h3>Front-End</h3></div><div class="skill-tags"><span><i class="devicon-angularjs-plain colored"></i>Angular</span><span><i class="devicon-typescript-plain colored"></i>TypeScript</span><span><i class="devicon-nextjs-original"></i>Next.js</span><span><i class="devicon-react-original colored"></i>React</span><span><i class="devicon-html5-plain colored"></i>HTML</span><span><i class="devicon-css3-plain colored"></i>CSS</span></div></div><div class="skill-card"><div class="skill-heading"><iconify-icon class="aero-icon" icon="fluent-emoji:desktop-computer" aria-hidden="true"></iconify-icon><h3>Back-End</h3></div><div class="skill-tags"><span><i class="devicon-java-plain colored"></i>Java</span><span><i class="devicon-spring-original colored"></i>Spring Boot</span><span><i class="devicon-nodejs-plain colored"></i>Node.js</span><span><i class="devicon-python-plain colored"></i>Python</span></div></div><div class="skill-card"><div class="skill-heading"><iconify-icon class="aero-icon" icon="fluent-emoji:chart-increasing" aria-hidden="true"></iconify-icon><h3>Data Engineering &amp; Analytics</h3></div><div class="skill-tags"><span><i class="devicon-apachespark-original colored"></i>Apache Spark</span><span><i class="devicon-apacheairflow-plain colored"></i>Apache Airflow</span><span><img class="technology-icon" src="https://cdn.simpleicons.org/databricks/FF3621" alt="" />Databricks</span></div></div><div class="skill-card"><div class="skill-heading"><iconify-icon class="aero-icon" icon="fluent-emoji:globe-with-meridians" aria-hidden="true"></iconify-icon><h3>Databases &amp; Infrastructure</h3></div><div class="skill-tags"><span><i class="devicon-postgresql-plain colored"></i>PostgreSQL</span><span><i class="devicon-mongodb-plain colored"></i>MongoDB</span><span><i class="devicon-docker-plain colored"></i>Docker</span><span><i class="devicon-amazonwebservices-plain-wordmark colored"></i>AWS</span></div></div></div></div></section>
+                            <section class="featured">
+                                <div class="featured-window-title"><iconify-icon icon="windows:folder"
+                                        aria-hidden="true"></iconify-icon><strong>selected-work</strong><span
+                                        class="legacy-controls">— □
+                                        ×</span></div>
+                                <div class="section-heading">
+                                    <div>
+                                        <p class="eyebrow">SELECTED WORK</p>
+                                        <h2>A few things I’ve built</h2>
+                                    </div><button class="ds-button ds-button-secondary ds-button-compact view-all"
+                                        data-section-link="projects">See all projects <span>→</span></button>
+                                </div>
+                                <div class="project-grid">
+                                    <div data-project="salaf"></div>
+                                    <div data-project="estoque"></div>
+                                </div>
+                            </section>
+                        </div>
+                    </section>
 
-            <section class="page-view is-hidden" data-view="experience"><div class="section-page"><div class="page-title"><p class="eyebrow">BACKGROUND</p><h2>Work, education &amp; location</h2></div><div class="timeline experience-grid"><div class="timeline-item"><span class="timeline-dot"></span><iconify-icon class="aero-icon" icon="fluent-emoji:briefcase" aria-hidden="true"></iconify-icon><p>WORK EXPERIENCE</p><h3>Full-Stack Software Engineer</h3><small>PicPay · Current</small></div><div class="timeline-item"><span class="timeline-dot"></span><iconify-icon class="aero-icon" icon="fluent-emoji:graduation-cap" aria-hidden="true"></iconify-icon><p>EDUCATION</p><h3>Technology Education</h3><small>FIAP</small></div><div class="timeline-item"><span class="timeline-dot"></span><iconify-icon class="aero-icon" icon="fluent-emoji:graduation-cap" aria-hidden="true"></iconify-icon><p>EDUCATION</p><h3>Professional Education</h3><small>Instituto J&amp;F</small></div><div class="timeline-item"><span class="timeline-dot"></span><iconify-icon class="aero-icon" icon="fluent-emoji:round-pushpin" aria-hidden="true"></iconify-icon><p>LOCATION</p><h3>São Paulo, Brazil</h3><small>Building for teams and users at scale</small></div></div></div></section>
+                    <section class="page-view is-hidden" data-view="about">
+                        <div class="legacy-page">
+                            <div class="legacy-columns">
+                                <section class="legacy-window legacy-document">
+                                    <div class="legacy-window-title"><iconify-icon icon="windows:document"
+                                            aria-hidden="true"></iconify-icon><strong>about-bianca.txt -
+                                            Notepad</strong><span class="legacy-controls">— □ ×</span></div>
+                                    <div class="legacy-document-body">
+                                        <p class="eyebrow">A LITTLE ABOUT ME</p>
+                                        <h2>Engineering reliable systems,<br />from interface to data.</h2>
+                                        <p class="body-copy">I’m a Full-Stack Software Engineer who enjoys making
+                                            complex things easier to
+                                            use and easier to maintain. I work across Legal Tech, Compliance, Human
+                                            Resources, front-end
+                                            development, back-end systems and Data Engineering.</p>
+                                        <p class="body-copy">I’m curious by nature, quick to learn and happiest when a
+                                            technical decision
+                                            makes someone’s day simpler.</p>
+                                        <div class="legacy-rule"></div>
+                                        <div class="legacy-file-lines">
+                                            <span>Filename:</span><strong>about-bianca.txt</strong><span>Type:</span><strong>Text
+                                                Document</strong><span>Size:</span><strong>4.8 KB</strong>
+                                        </div>
+                                    </div>
+                                    <div class="legacy-window-status">Ln 01, Col 01&nbsp;&nbsp; |
+                                        &nbsp;&nbsp;Windows-1252&nbsp;&nbsp; |
+                                        &nbsp;&nbsp;Ready</div>
+                                </section>
+                                <aside class="legacy-sidebar">
+                                    <section class="legacy-window">
+                                        <div class="legacy-window-title"><iconify-icon icon="windows:desktop"
+                                                aria-hidden="true"></iconify-icon><strong>Quick facts</strong><span
+                                                class="legacy-controls">×</span></div>
+                                        <div class="legacy-panel-body">
+                                            <div class="system-row"><span>role</span><strong>Full-Stack
+                                                    Engineer</strong></div>
+                                            <div class="system-row"><span>focus</span><strong>interfaces + data</strong>
+                                            </div>
+                                            <div class="system-row"><span>location</span><strong>São Paulo,
+                                                    Brazil</strong></div>
+                                            <div class="system-row"><span>education</span><strong>FIAP</strong></div>
+                                        </div>
+                                    </section>
+                                    <section class="legacy-window principles-window">
+                                        <div class="legacy-window-title"><iconify-icon icon="windows:pin"
+                                                aria-hidden="true"></iconify-icon><strong>engineering.txt</strong><span
+                                                class="legacy-controls">— □ ×</span></div>
+                                        <div class="legacy-panel-body">
+                                            <p class="principle-quote">“Build it robust.<br />Keep it useful.<br />Make
+                                                it scale.”</p><small>—
+                                                ENGINEERING PRINCIPLES</small>
+                                            <div class="progress-label"><span>system health</span><strong>100%</strong>
+                                            </div>
+                                            <div class="retro-progress"><i></i></div>
+                                        </div>
+                                    </section>
+                                </aside>
+                            </div>
+                        </div>
+                    </section>
 
-            <section class="page-view is-hidden" data-view="contact"><div id="contact-form-view" class="contact-layout"><section><p class="eyebrow">LET’S MAKE SOMETHING GOOD</p><h2>Have a project<br />in mind?</h2><p class="body-copy">I’d love to hear what you’re working on. Send a note and I’ll get back to you soon.</p><a class="email-link" href="mailto:hello@example.com">hello@example.com <span>↗</span></a></section><form class="contact-form" id="contact-form"><label>Name<input name="name" placeholder="Your name" required /></label><label>Email<input name="email" type="email" placeholder="you@example.com" required /></label><label>Message<textarea name="message" placeholder="Tell me a little about your project..." rows="4" required></textarea></label><button class="aero-button" type="submit">Send message <span>→</span></button></form></div></section>
-          </div>
+                    <section class="page-view is-hidden" data-view="projects">
+                        <div class="legacy-page projects-page">
+                            <div class="folder-window">
+                                <div class="folder-caption">
+                                    <p class="eyebrow">PROJECTS</p>
+                                    <h2>My Projects</h2>
+                                    <p>Select an object to view its details, technologies and source.</p>
+                                    <p class="search-status" id="search-status" role="status" aria-live="polite"></p>
+                                </div>
+                                <div class="projects-workspace">
+                                    <aside class="project-tree"><strong>My Projects</strong><button
+                                            class="tree-item active" type="button">▾ Portfolio</button><button
+                                            class="tree-item" type="button">▸ Web apps
+                                            <small>2</small></button><button class="tree-item" type="button">▸ APIs
+                                            &amp; data
+                                            <small>2</small></button><button class="tree-item" type="button">▸
+                                            Experiments
+                                            <small>2</small></button>
+                                        <div class="tree-divider"></div><span class="tree-footnote">Last
+                                            modified<br /><strong>22/10/2026</strong></span>
+                                    </aside>
+                                    <div class="projects-full">
+                                        <div data-project="salaf"></div>
+                                        <div data-project="estoque"></div>
+                                        <div data-project="trocatine"></div>
+                                        <div data-project="laufey"></div>
+                                        <div data-project="tikmovies"></div>
+                                        <div data-project="jovi"></div>
+                                    </div>
+                                </div>
+                                <div class="folder-status"><span>6 objects</span><span>Projects ready</span></div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="page-view is-hidden" data-view="skills">
+                        <div class="legacy-page skills-page">
+                            <div class="folder-caption skills-caption">
+                                <p class="eyebrow">TECHNOLOGY TOOLKIT</p>
+                                <h2>The tools behind the work.</h2>
+                                <p>Organized by the part of the product they help bring to life.</p>
+                            </div>
+                            <div class="skills-desk">
+                                <article class="skills-module">
+                                    <div class="skills-module-title"><iconify-icon class="aero-icon"
+                                            icon="windows:desktop"
+                                            aria-hidden="true"></iconify-icon><strong>Front-End</strong><span>6
+                                            items</span></div>
+                                    <div class="skills-module-body">
+                                        <div class="skill-tags"><span><i
+                                                    class="devicon-angularjs-plain colored"></i>Angular</span><span><i
+                                                    class="devicon-typescript-plain colored"></i>TypeScript</span><span><i
+                                                    class="devicon-nextjs-original"></i>Next.js</span><span><i
+                                                    class="devicon-react-original colored"></i>React</span><span><i
+                                                    class="devicon-html5-plain colored"></i>HTML</span><span><i
+                                                    class="devicon-css3-plain colored"></i>CSS</span></div>
+                                        <div class="skill-meter"><span>interface layer</span><i><b></b></i></div>
+                                    </div>
+                                </article>
+                                <article class="skills-module">
+                                    <div class="skills-module-title"><iconify-icon class="aero-icon"
+                                            icon="windows:server"
+                                            aria-hidden="true"></iconify-icon><strong>Back-End</strong><span>4
+                                            items</span></div>
+                                    <div class="skills-module-body">
+                                        <div class="skill-tags"><span><i
+                                                    class="devicon-java-plain colored"></i>Java</span><span><i
+                                                    class="devicon-spring-original colored"></i>Spring
+                                                Boot</span><span><i
+                                                    class="devicon-nodejs-plain colored"></i>Node.js</span><span><i
+                                                    class="devicon-python-plain colored"></i>Python</span></div>
+                                        <div class="skill-meter"><span>service layer</span><i><b></b></i></div>
+                                    </div>
+                                </article>
+                                <article class="skills-module">
+                                    <div class="skills-module-title"><iconify-icon class="aero-icon" icon="windows:data"
+                                            aria-hidden="true"></iconify-icon><strong>Data Engineering &amp;
+                                            Analytics</strong><span>3
+                                            items</span></div>
+                                    <div class="skills-module-body">
+                                        <div class="skill-tags"><span><i
+                                                    class="devicon-apachespark-original colored"></i>Apache
+                                                Spark</span><span><i
+                                                    class="devicon-apacheairflow-plain colored"></i>Apache
+                                                Airflow</span><span><img class="technology-icon"
+                                                    src="https://cdn.simpleicons.org/databricks/FF3621"
+                                                    alt="" />Databricks</span></div>
+                                        <div class="skill-meter"><span>data layer</span><i><b></b></i></div>
+                                    </div>
+                                </article>
+                                <article class="skills-module">
+                                    <div class="skills-module-title"><iconify-icon class="aero-icon"
+                                            icon="windows:network" aria-hidden="true"></iconify-icon><strong>Databases
+                                            &amp; Infrastructure</strong><span>4
+                                            items</span></div>
+                                    <div class="skills-module-body">
+                                        <div class="skill-tags"><span><i
+                                                    class="devicon-postgresql-plain colored"></i>PostgreSQL</span><span><i
+                                                    class="devicon-mongodb-plain colored"></i>MongoDB</span><span><i
+                                                    class="devicon-docker-plain colored"></i>Docker</span><span><i
+                                                    class="devicon-amazonwebservices-plain-wordmark colored"></i>AWS</span>
+                                        </div>
+                                        <div class="skill-meter"><span>infrastructure</span><i><b></b></i></div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="folder-status"><span>17 tools</span><span>Ready to build</span></div>
+                        </div>
+                    </section>
+
+                    <section class="page-view is-hidden" data-view="experience">
+                        <div class="legacy-page experience-page">
+                            <div class="folder-caption experience-caption">
+                                <p class="eyebrow">EXPERIENCE</p>
+                                <h2>Where I’ve been learning and building.</h2>
+                                <p>Work, education and the context behind the portfolio.</p>
+                            </div>
+                            <div class="experience-desk">
+                                <div class="experience-rail"><span class="rail-dot active"></span><span
+                                        class="rail-line"></span><span class="rail-dot"></span><span
+                                        class="rail-line"></span><span class="rail-dot"></span><span
+                                        class="rail-line"></span><span class="rail-dot"></span></div>
+                                <div class="experience-records">
+                                    <article class="experience-record experience-record-wide current">
+                                        <div class="record-icon"><iconify-icon class="aero-icon"
+                                                icon="windows:briefcase" aria-hidden="true"></iconify-icon></div>
+                                        <div class="record-copy">
+                                            <p>WORK EXPERIENCE</p>
+                                            <h3>PicPay</h3><small>São Paulo, Brazil · on-site · 2 years 7 months</small>
+                                            <div class="role-history">
+                                                <div><strong>Junior IT Analyst</strong><span>Jan 2026 – present · 10
+                                                        months</span></div>
+                                                <div><strong>IT Assistant</strong><span>Apr 2024 – Jan 2026 · 1 year 10
+                                                        months</span></div>
+                                            </div>
+                                        </div><span class="record-status">current</span>
+                                    </article>
+                                    <article class="experience-record">
+                                        <div class="record-icon"><iconify-icon class="aero-icon"
+                                                icon="windows:education" aria-hidden="true"></iconify-icon></div>
+                                        <div class="record-copy">
+                                            <p>EDUCATION</p>
+                                            <h3>Bachelor’s Degree in Software Engineering</h3><small>FIAP · Jan 2026 –
+                                                Jan 2030 · expected
+                                                graduation</small>
+                                        </div><span class="record-status">in progress</span>
+                                    </article>
+                                    <article class="experience-record">
+                                        <div class="record-icon"><iconify-icon class="aero-icon"
+                                                icon="windows:education" aria-hidden="true"></iconify-icon></div>
+                                        <div class="record-copy">
+                                            <p>EDUCATION</p>
+                                            <h3>Technical Course in Systems Analysis and Development</h3>
+                                            <small>Instituto J&amp;F · Jan 2023 –
+                                                Dec 2025 · 3 years</small>
+                                        </div><span class="record-status">completed</span>
+                                    </article>
+                                    <article class="experience-record">
+                                        <div class="record-icon"><iconify-icon class="aero-icon" icon="windows:pin"
+                                                aria-hidden="true"></iconify-icon></div>
+                                        <div class="record-copy">
+                                            <p>LOCATION</p>
+                                            <h3>São Paulo, Brazil</h3><small>Building for teams and users at
+                                                scale</small>
+                                        </div><span class="record-status">online</span>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="folder-status"><span>4 milestones</span><span>Timeline ready</span></div>
+                        </div>
+                    </section>
+
+                    <section class="page-view is-hidden" data-view="contact">
+                        <div id="contact-form-view" class="legacy-page contact-page">
+                            <div class="folder-caption contact-caption">
+                                <p class="eyebrow">CONTACT</p>
+                                <h2>Start a conversation.</h2>
+                                <p>Tell me about the project, team or idea you’re working on.</p>
+                            </div>
+                            <div class="contact-desk">
+                                <aside class="contact-summary">
+                                    <div class="contact-summary-title"><iconify-icon icon="windows:profile"
+                                            aria-hidden="true"></iconify-icon><strong>LET’S CONNECT</strong></div>
+                                    <div class="contact-summary-body">
+                                        <div class="contact-avatar"><img src="images/contact-messenger.png" alt="" />
+                                        </div>
+                                        <h3>Bianca Veloso</h3>
+                                        <p>Full-Stack Software Engineer<br />São Paulo, Brazil</p><span
+                                            class="online-label"><i class="online-dot"></i> Open to a
+                                            conversation</span>
+                                        <div class="contact-facts">
+                                            <div><span>FOCUS</span><strong>product + engineering</strong></div>
+                                            <div><span>REPLY</span><strong>via your email app</strong></div>
+                                        </div>
+                                    </div>
+                                    <div class="contact-note-retro">
+                                        <p>Share a little about your idea, team or opportunity. I’ll prepare a draft in
+                                            your email app.</p>
+                                        <span>Good to know</span><strong>No account or signup required</strong>
+                                    </div>
+                                    <div class="contact-links"><span class="contact-links-label">Find me online</span><a
+                                            href="https://github.com/Biancavitoriav" target="_blank" rel="noreferrer"><i
+                                                class="devicon-github-original" aria-hidden="true"></i> GitHub
+                                            <span>↗</span></a><a
+                                            href="https://www.linkedin.com/in/bianca-vitoria-veloso/" target="_blank"
+                                            rel="noreferrer"><i class="devicon-linkedin-plain" aria-hidden="true"></i>
+                                            LinkedIn <span>↗</span></a></div>
+                                </aside>
+                                <section class="contact-message">
+                                    <div class="contact-message-title"><iconify-icon icon="windows:mail"
+                                            aria-hidden="true"></iconify-icon>
+                                        <div>
+                                            <p>NEW MESSAGE</p>
+                                            <h3>Tell Bianca what you’re working on.</h3>
+                                        </div><button
+                                            class="ds-button ds-button-secondary ds-button-compact toolbar-action"
+                                            type="reset" form="contact-form">Clear form</button>
+                                    </div>
+                                    <form class="contact-form" id="contact-form">
+                                        <div class="contact-fields"><label class="field-group"><span>To</span><input
+                                                    id="contact-to" value="hello@example.com" readonly /></label><label
+                                                class="field-group"><span>Your
+                                                    name</span><input id="contact-name" name="name" autocomplete="name"
+                                                    placeholder="How should I call you?" required /></label><label
+                                                class="field-group"><span>Email</span><input id="contact-email"
+                                                    name="email" autocomplete="email" type="email"
+                                                    placeholder="Where can I reply?" required /></label><label
+                                                class="field-group"><span>Subject</span><input id="contact-subject"
+                                                    name="subject" placeholder="What would you like to talk about?"
+                                                    required /></label><label
+                                                class="field-group field-message"><span>Message</span><textarea
+                                                    id="contact-message" name="message"
+                                                    placeholder="Tell me a little about your project or idea…" rows="6"
+                                                    required></textarea></label></div>
+                                        <div class="composer-footer"><span><i class="online-dot"></i> Your draft will
+                                                open in your email
+                                                app</span><button class="ds-button ds-button-primary"
+                                                type="submit">Prepare email
+                                                <span>→</span></button></div>
+                                    </form>
+                                </section>
+                            </div>
+                            <div class="folder-status"><span>Ready to connect</span><span>Local email composer</span>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <footer class="browser-status"><span><i></i> Portfolio
+                    ready</span><span>Connection&nbsp;&nbsp;│&nbsp;&nbsp;100%</span></footer>
         </div>
-        <footer class="browser-status"><span><i></i> Done</span><span>Internet&nbsp;&nbsp;│&nbsp;&nbsp;100%</span></footer>
-      </div>
-      <div class="taskbar"><button class="start-button" data-section-link="home"><iconify-icon class="orb" icon="fluent-emoji:window" aria-hidden="true"></iconify-icon><strong>start</strong></button><div class="task-item"><iconify-icon class="mini-browser" icon="fluent-emoji:globe-with-meridians" aria-hidden="true"></iconify-icon> Bianca Veloso — Portfolio</div><div class="task-spacer"></div><div class="tray"><iconify-icon icon="fluent-emoji:cloud" aria-hidden="true"></iconify-icon><iconify-icon icon="fluent-emoji:antenna-bars" aria-hidden="true"></iconify-icon><iconify-icon icon="fluent-emoji:computer-mouse" aria-hidden="true"></iconify-icon><strong>10:24 AM</strong></div></div>
+        <div class="taskbar"><button class="start-button" data-section-link="home"><iconify-icon class="orb"
+                    icon="windows:start" aria-hidden="true"></iconify-icon><strong>start</strong></button>
+            <div class="task-item"><iconify-icon class="mini-browser" icon="windows:globe"
+                    aria-hidden="true"></iconify-icon>
+                Bianca Veloso — Portfolio</div>
+            <div class="task-spacer"></div>
+            <div class="tray"><iconify-icon icon="windows:cloud" aria-hidden="true"></iconify-icon><iconify-icon
+                    icon="windows:network" aria-hidden="true"></iconify-icon><iconify-icon icon="windows:mouse"
+                    aria-hidden="true"></iconify-icon><strong>10:24 AM</strong></div>
+        </div>
 
-      <div class="modal-backdrop" id="project-modal" hidden><section class="project-modal" role="dialog" aria-modal="true" aria-labelledby="project-modal-title"><div class="modal-titlebar"><span class="site-mark">BV</span><span>Project Details — <span id="modal-titlebar-name"></span></span><button id="modal-close" aria-label="Close project details">×</button></div><div class="modal-body"><div class="modal-art" id="modal-art"><span id="modal-number"></span><div class="project-window modal-window"><i></i><i></i><i></i></div><div class="art-bubbles"><i></i><i></i><i></i></div></div><div class="modal-copy"><p class="eyebrow" id="modal-role"></p><h2 id="project-modal-title"></h2><p id="modal-description"></p><div class="modal-divider"></div><h3>Technology &amp; focus</h3><div class="tech-list" id="modal-technologies"></div><a class="aero-button modal-link" href="#" id="modal-link">Repository / case study <span>↗</span></a></div></div><div class="modal-status"><span><i></i> Project loaded</span><button id="modal-close-bottom">Close</button></div></section></div>
     </main>
-    <script src="script.js"></script>
-  </body>
+    <script src="script.js?v=2"></script>
+</body>
+
 </html>
