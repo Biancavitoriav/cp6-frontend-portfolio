@@ -6,7 +6,8 @@ A proposta é apresentar perfil, projetos, habilidades e experiências como se o
 
 ## Prévia
 
-![Preview do portfólio](images/frutiger-aero-fundo.webp)
+<img width="1432" height="812" alt="image" src="https://github.com/user-attachments/assets/1545d581-ed99-48fe-898a-d15619ce3492" />
+
 
 ## Funcionalidades
 
